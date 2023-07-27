@@ -95,7 +95,7 @@ function create_coloured_glyph(source_canvas, code, rgb, font_width, height) {
 }
 
 class Font {
-	async load({ name = "TOPAZ 437", bytes, use_9px_font = false }) {
+	async load({ name = "IBM VGA", bytes, use_9px_font = false }) {
 		if (bytes) {
 			//If we load XBIN, we check the font from the XBIN file so we don't need to load a font
 			if (this.name) {

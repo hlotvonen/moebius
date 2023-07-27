@@ -563,7 +563,7 @@ function render_scroll_canvas_right(doc, render) {
     for (let y = 0; y < doc.rows; y++) render_at(render, 0, y, doc.data[y * doc.columns]);
 }
 
-function new_document({ columns = 80, rows = 100, title = "", author = "", group = "", date = "", palette = [...palette_4bit], font_name = "TOPAZ 437", ice_colors = true, use_9px_font = false, comments = "", data, font_bytes } = {}) {
+function new_document({ columns = 80, rows = 100, title = "", author = "", group = "", date = "", palette = [...palette_4bit], font_name = "IBM VGA", ice_colors = true, use_9px_font = false, comments = "", data, font_bytes } = {}) {
     const doc = new Textmode(null, { columns, rows, title, author, group, date: (date != "") ? date : current_date(), palette, font_name, ice_colors, use_9px_font, comments });
     if (!data || data.length != columns * rows) {
         doc.data = new Array(columns * rows);

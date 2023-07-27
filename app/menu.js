@@ -565,7 +565,7 @@ function font_menu_template(win) {
             { label: "Change Font", submenu: font_menu_items(win) },
             { label: "Viler's VGA textmode fonts", submenu: viler_font_menu_items(win) },
             { label: "Load Custom Font\u2026", id: "loadcustomfont", click(item) { win.send("load_custom_font"); } },
-            { label: "Reset to default font\u2026", id: "resetxbinfont", click(item) { win.send("change_font", "TOPAZ 437"); } },
+            { label: "Reset to default font\u2026", id: "resetxbinfont", click(item) { win.send("change_font", "IBM VGA"); } },
             { label: "Export font\u2026", id: "export_font", click(item) { win.send("export_font"); } },
             { label: "Import font from image (GIF/PNG)\u2026", id: "import_font", click(item) { win.send("import_font"); } },
             { type: "separator" },

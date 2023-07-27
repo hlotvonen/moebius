@@ -1923,7 +1923,7 @@ function lookup_url(font_name) {
     case "40C-TYPE (8x24)": return "../fonts/viler/40C-TYPE.F24";
     case "9THWAVE (8x14)": return "../fonts/viler/9THWAVE.F14";
 
-    default: return "../fonts/custom/TOPAZ_437.F16";
+    default: return "../fonts/ibm/CP437.F16";
   }
 }
 

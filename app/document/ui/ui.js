@@ -508,6 +508,8 @@ class Toolbar extends events.EventEmitter {
     }
 
     draw_fkeys() {
+        // stop the character palette from mapping the function keys
+        return
         for (let i = 0; i < 12; i++) {
             let num = i;
             const fkey_index = this.fkey_index;
